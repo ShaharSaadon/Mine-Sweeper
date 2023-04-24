@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainc.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body onload="onInit()" onmousedown="handleMouseRightClick(event)">
+    <div class="game-container">
+        <div class="header">
+            <div style="font-family: 'Orbitron', 'sans-serif'" class="time left-header"><span>0</span></div>
+            <div class="center-header">
+                <h1>The MineSweeper Game</h1>
+                <h2><span>Game Run</span></h2>
+                <p class="best-score">Best Score: <span></span></p>
+                <button class="levl" onclick="updateLevel(4)">Easy</button>
+                <button class="levl" onclick="updateLevel(8)">Medium</button>
+                <button class="levl" onclick="updateLevel(12)">Hard</button>
+            </div>
+            <div class="lives right-header"><span></span></div>
+
+        </div>
+        <div class="information center">
+            <div class="hints inf center">
+                <img title="Hint1" class="hint inf" id="hint1" onclick="hint(1)" src="img/hint.png" alt="">
+                <img title="Hint2" class="hint inf" id="hint2" onclick="hint(2)" src="img/hint.png" alt="">
+                <img title="Hint3" class="hint inf" id="hint3" onclick="hint(3)" src="img/hint.png" alt="">
+            </div>
+            <img class="mine-exterminator center" src="img/mine_Exterminator.png" onclick="mineExterminator()"
+                alt="Mine_Exterminator" title="Mine_Exterminator">
+            <div class="bbb center">
+                <button onclick="safeCell()" class="btn-safe inf">Safe Click</button> --
+                <button class="btn-message"><span></span>more</button>
+            </div>
+
+        </div>
+        <div class="mines center">mines to marked:<span></span></div>
+       
+
+
+        <div class="board-container">
+            <table style="font-family: 'Orbitron', 'sans-serif'" class="board">
+                <tbody class="board-cells"></tbody>
+            </table>
+        </div>
+
+
+        <div class="footer">
+
+            <button onclick="manuallyCreate()">Manually Create</button>
+            <button onclick="undo()">UNDO</button>
+            <button onclick="megaHint()">Mega Hint</button>
+            <button onclick="onInit()">Restart</button>
+
+            <footer>Ⓒ Shahar Saadon Ⓒ</footer>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/manually.js"></script>
+    <script src="js/hint.js"></script>
+
+
+</body>
+
+</html>

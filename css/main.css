@@ -1,0 +1,134 @@
+body {
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    background: linear-gradient(to top, #182676, #3251b8, #2578a5, #46a0ea, #8a8afe, #749af4, #F3686A);
+}
+
+.game {
+
+    width: 550px;
+    margin: 0 auto;
+    border: 5px black solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+table {
+    position: relative;
+    margin: -0 auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border-spacing: 5px;
+
+}
+
+.heart{
+    width: 20px;
+}
+
+.information {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px black solid;
+}
+
+.cell:hover {
+    background-color: lightcoral;
+}
+
+.levl {
+    width: 65px;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.unshown span {
+    display: none;
+}
+
+.shown {
+    background-color: gray;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+
+.hint {
+    margin-top: 20px;
+    padding: 10px;
+    width: 60px;
+    height: 35px;
+    transition: 1s;
+}
+
+footer {
+    margin-top: 25px;
+}
+
+.time {
+    margin-top: 5px;
+    background-color: black;
+    color: green;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    border: 3px solid white;
+    text-align: center;
+    padding: 5px;
+    display: inline;
+
+
+}
+
+.lives {
+    margin-top: 5px;
+    background-color: white;
+    color: green;
+    width: 125px;
+    height: 25px;
+    margin: 0 auto;
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px;
+    display: inline;
+
+
+}
+
+.btn-safe {
+    width: 80px;
+    height: 60px;
+    background-color: lightcoral;
+
+}
+
+.btns button {
+    align-items: center;
+    /* width: 65px; */
+    height: 40px;
+    border-radius: 10px;
+    border: black solid 3px;
+}
+
+.mine-exterminator {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

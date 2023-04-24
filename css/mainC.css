@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.game-container {
+    /* background: linear-gradient(to top, #182676, #3251b8, #2578a5, #46a0ea, #8a8afe, #749af4, #F3686A); */
+    text-align: center;
+    width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 10px black dashed;
+    opacity: 0.9;
+    background: rgba(100, 0, 200, .5);
+
+}
+
+.header {
+    height: 250px;
+    display: flex;
+}
+
+.center-header {
+    width: 300px;
+    margin: 0 auto
+}
+
+.left-header {
+    display: flex;
+}
+
+.right-header {
+    float: right;
+    margin-top: 15px;
+}
+
+button {
+    color: red;
+    background: linear-gradient(to top, #010e56, #010e56, #010e56, #010e56, #0a1b79, #0a1b79, #0a1b79);
+    max-width: 350px;
+    max-height: 100px;
+    border-radius: 20px;
+    font-size: large;
+    padding: 12px;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.footer button:hover {
+    font-size: xx-large;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon {
+    width: 60px;
+}
+
+.win {
+    width: 100px;
+}
+
+h1 {
+    float: inline-start;
+    font-size: x-large;
+}
+
+h2 {
+    float: inline-start;
+    font-size: large;
+}
+
+h3{
+    font-size: 14px;
+}
+
+.time {
+    margin-top: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding-left: 35px;
+    text-shadow: #010e56;
+    font-size: 24px;
+    width: 100px;
+    height: 45px;
+    background-color: black;
+    color: green;
+    border: white 2px dashed;
+
+}
+
+.right-header {
+    width: 100px;
+}
+
+.information {
+    display: flex;
+}
+
+.heart {
+    width: 40px;
+}
+
+.hint {
+    width: 40px;
+}
+
+
+.hint:hover {
+    cursor: pointer;
+}
+
+.mine-exterminator {
+    width: 60px;
+}
+
+.mine-exterminator:hover {
+    width: 100px;
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+    border-radius: 10px;
+    border-spacing: 4px;
+    border: 4px black solid;
+    
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 5px black solid;
+    color: lightblue;
+    opacity: 1.1    
+
+}
+
+.cell.unshown:hover {
+    background-color: lightsalmon;
+}
+
+.unshown span {
+    display: none;
+}
+
+.shown {
+    background-color: black;
+}
+
+.manually {
+    margin: 25px 25px;
+    background: black;
+    width: 300px;
+    height: 250px;
+    border: gray 2px dashed;
+}
+
+.mine {
+    width: 35px;
+    height: 35px;
+}
+
+.mines {
+    width: 100%;
+    font-size: x-large;
+}
+
+.flag {
+    width: 35px;
+    height: 35px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
